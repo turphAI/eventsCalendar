@@ -1,0 +1,42 @@
+{
+  "name": "calendar-sync-backend",
+  "version": "0.1.0",
+  "description": "Backend service for Calendar Sync - AI-powered event extraction and notification",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "tsc",
+    "deploy": "vercel --prod",
+    "lint": "eslint . --ext .ts",
+    "type-check": "tsc --noEmit"
+  },
+  "keywords": [
+    "calendar",
+    "ai",
+    "claude",
+    "gmail",
+    "icloud"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.20.0",
+    "@google-cloud/pubsub": "^4.0.0",
+    "firebase-admin": "^12.0.0",
+    "googleapis": "^131.0.0",
+    "node-fetch": "^3.3.2",
+    "pg": "^8.11.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@types/pg": "^8.10.9",
+    "@typescript-eslint/eslint-plugin": "^6.19.0",
+    "@typescript-eslint/parser": "^6.19.0",
+    "@vercel/node": "^3.0.0",
+    "eslint": "^8.56.0",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
